@@ -166,9 +166,12 @@
                                             </li>
                                         </ul>
                                     </div>
-                                    <input type="tel" class="phone input-form-reg-num-up" name="phone" required="true"
+<!--                                    <input maxlength="10" type="text" class="phone input-form-reg-num-up" name="phone" required="true"-->
+<!--                                           autocomplete="off" style="padding-left: 85px" data-intl-tel-input-id="0"-->
+<!--                                           placeholder="312 345 6789"></div>-->
+                                    <input maxlength="10" type="text" class="phone input-form-reg-num-up" name="phone" required="true"
                                            autocomplete="off" style="padding-left: 85px" data-intl-tel-input-id="0"
-                                           placeholder="312 345 6789"></div>
+                                           placeholder="312 345 6789" oninput="this.value = this.value.replace(/[^0-9]/g, '');">
                             </div>
                         </div>
                         <div class="form_group--button">
